@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/marquee_ll1_float"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/beijin"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/redSpeaker_float"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/xlbbb" />
+
+        <com.gongwen.marqueen.SimpleMarqueeView
+            android:visibility="gone"
+            android:id="@+id/marqueeView3_float"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:animateFirstView="true"
+            android:autoStart="true"
+            android:flipInterval="2500"
+            app:smvTextEllipsize="end"
+            app:smvTextSingleLine="true"
+            android:inAnimation="@anim/in_top"
+            android:outAnimation="@anim/out_bottom"
+            app:marqueeAnimDuration="500"
+            app:smvTextColor="@color/black"
+            app:smvTextGravity="center_vertical"
+            app:smvTextSize="16sp" />
+
+
+        <TextSwitcher
+            android:id="@+id/cp_main_top_ts_float"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"></TextSwitcher>
+    </LinearLayout>
+
+</LinearLayout>

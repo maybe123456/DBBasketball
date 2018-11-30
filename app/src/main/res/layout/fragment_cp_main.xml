@@ -6,17 +6,17 @@
 
     </data>
 
-        <LinearLayout
+        <FrameLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-                <FrameLayout
-                    android:id="@+id/list_frag"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-
-                </FrameLayout>
-        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/list_frag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </FrameLayout>
+            <include layout="@layout/float_bar_text"></include>
+        </FrameLayout>
 
 </layout>
