@@ -8,8 +8,8 @@ android {
     dataBinding.enabled = true
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.ddd.test5"
-        resValue "string", "app_name", "仿淘宝"
+        applicationId "com.ddd.test6"
+        resValue "string", "app_name", "篮球资讯"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 7
