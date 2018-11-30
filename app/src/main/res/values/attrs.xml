@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="XEditText">
+        <attr name="XEditText_DrawableLeft" format="reference" />
+        <attr name="XEditText_Hint" format="string|reference" />
+        <attr name="XEditText_Text" format="string|reference" />
+        <attr name="XEditText_IsPassword" format="boolean" />
+        <attr name="XEditText_DrawablePadding" format="dimension" />
+        <attr name="XEditText_PaddingLeft" format="dimension" />
+        <attr name="XEditText_PaddingRight" format="dimension" />
+        <attr name="XEditText_TextSize" format="dimension" />
+        <attr name="XEditText_MaxLength" format="integer" />
+        <attr name="XEditText_TextColor" format="color" />
+        <attr name="XEditText_TextColorHint" format="color" />
+        <attr name="XEditText_ShowEyes" format="boolean" />
+        <attr name="XEditText_InputType" format="enum">
+            <enum name="number" value="0x00000002" />
+            <enum name="numberDecimal" value="0x00002002" />
+            <enum name="password" value="0x00000081" />
+        </attr>
+    </declare-styleable>
+
+    <!--ZRadioButton-->
+    <declare-styleable name="ZRadioButton">
+        <attr name="ZRadioButton_IndicatorColor" format="color" />
+        <attr name="ZRadioButton_FocusZoom" format="boolean" />
+        <attr name="ZRadioButton_Icon" format="string|reference" />
+        <attr name="ZRadioButton_Text" format="string|reference" />
+        <attr name="ZRadioButton_IconTextSize" format="dimension" />
+        <attr name="ZRadioButton_TextSize" format="dimension" />
+        <attr name="ZRadioButton_TextColor" format="color|reference" />
+        <attr name="ZRadioButton_indicator_position" format="enum">
+            <enum name="top" value="0" />
+            <enum name="bottom" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--TitleBar-->
+    <declare-styleable name="TitleBar">
+        <attr name="TitleBar_Title" format="string|reference" />
+        <attr name="TitleBar_LeftText" format="string|reference" />
+        <attr name="TitleBar_RightText" format="string|reference" />
+        <attr name="TitleBar_RightBackground" format="reference" />
+        <attr name="TitleBar_Background" format="reference" />
+        <attr name="TitleBar_BackgroundColor" format="color" />
+        <attr name="TitleBar_BackgroundResource" format="reference" />
+        <attr name="TitleBar_TextColor" format="color" />
+        <attr name="TitleBar_TextSize" format="dimension" />
+        <attr name="TitleBar_RightTextSize" format="dimension" />
+        <attr name="TitleBar_RightTextColor" format="color" />
+        <attr name="TitleBar_LeftVisibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="gone" value="0x00000008" />
+            <enum name="invisible" value="0x00000004" />
+        </attr>
+    </declare-styleable>
+
+    <!--CircleImageView-->
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+        <attr name="name" format="string" />
+    </declare-styleable>
+
+    <!--ItemBar-->
+    <declare-styleable name="ItemBar">
+        <attr name="ItemBar_Text" format="string|reference" />
+        <attr name="ItemBar_Left_Icon" format="string|reference" />
+        <attr name="ItemBar_Left_TextColor" format="color" />
+        <attr name="ItemBar_Right_Icon" format="string|reference" />
+        <attr name="ItemBar_Right_TextColor" format="color" />
+        <attr name="ItemBar_Background" format="color" />
+        <attr name="ItemBar_TextColor" format="color" />
+        <attr name="ItemBar_TextSize" format="dimension" />
+        <attr name="ItemBar_Left_TextSize" format="dimension" />
+        <attr name="ItemBar_LeftVisibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="gone" value="0x00000008" />
+            <enum name="invisible" value="0x00000004" />
+        </attr>
+        <attr name="ItemBar_RightVisibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="gone" value="0x00000008" />
+            <enum name="invisible" value="0x00000004" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BaseItem_ITI">
+        <attr name="text" format="string|reference" />
+        <attr name="BaseItem_ITI_TextSize" format="dimension" />
+        <attr name="BaseItem_ITI_TextColor" format="color" />
+        <attr name="BaseItem_ITI_RightArrowVisibility" format="enum">
+            <enum name="visible" value="0x00000000" />
+            <enum name="gone" value="0x00000008" />
+            <enum name="invisible" value="0x00000004" />
+        </attr>
+        <attr name="iti_leftDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ZArrowView">
+        <attr name="ZArrowView_orientation" format="enum">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="GFloatingMenu">
+        <attr name="floatIcon" format="integer" />
+        <attr name="hintBgColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PraiseListView">
+        <attr name="item_color" format="color" />
+        <attr name="item_selector_color" format="color" />
+    </declare-styleable>
+
+    <!-- CircularProgressBar -->
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpbStyle" format="reference" />
+        <attr name="cpb_color" format="color" />
+        <attr name="cpb_colors" format="reference" />
+        <attr name="cpb_stroke_width" format="dimension" />
+        <attr name="cpb_min_sweep_angle" format="integer" />
+        <attr name="cpb_max_sweep_angle" format="integer" />
+        <attr name="cpb_sweep_speed" format="float" />
+        <attr name="cpb_rotation_speed" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="Circle">
+        <attr name="circleBackground" format="integer" />
+        <attr name="firstChildPosition">
+            <enum name="East" value="0" />
+            <enum name="South" value="90" />
+            <enum name="West" value="180" />
+            <enum name="North" value="270" />
+        </attr>
+        <attr name="rotateToCenter" format="boolean" />
+        <attr name="isRotating" format="boolean" />
+    </declare-styleable>
+    <!--<declare-styleable name="CircleImageView">-->
+        <!--<attr name="name" format="string" />-->
+    <!--</declare-styleable>-->
+
+</resources>

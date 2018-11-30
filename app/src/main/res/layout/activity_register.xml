@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_color"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <com.miracle.base.view.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/icon_tab_me"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <com.miracle.base.view.XEditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    app:XEditText_Hint="请输入用户名"
+                    app:XEditText_TextColor="@color/white"
+                    app:XEditText_TextColorHint="@color/white"
+                    app:XEditText_TextSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <com.miracle.base.view.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/icon_phone"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <com.miracle.base.view.XEditText
+                    android:id="@+id/etPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    app:XEditText_Hint="请输入手机号"
+                    app:XEditText_InputType="number"
+                    app:XEditText_TextColor="@color/white"
+                    app:XEditText_TextColorHint="@color/white"
+                    app:XEditText_TextSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/verifyCode"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="14sp" />
+
+                <com.miracle.base.view.XEditText
+                    android:id="@+id/etVerifyCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    app:XEditText_InputType="number"
+                    app:XEditText_TextColor="@color/text_nine_Color"
+                    app:XEditText_TextSize="14sp" />
+
+                <Button
+                    android:id="@+id/btVerify"
+                    android:layout_width="92dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/base_button_hollow_bg"
+                    android:text="@string/getVerifyCode"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical">
+
+                <com.miracle.base.view.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/icon_lock"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <com.miracle.base.view.XEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:showDividers="middle"
+                    app:XEditText_Hint="请输入8-18位密码"
+                    app:XEditText_InputType="password"
+                    app:XEditText_ShowEyes="true"
+                    app:XEditText_TextColor="@color/white"
+                    app:XEditText_TextColorHint="@color/white"
+                    app:XEditText_TextSize="14sp" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+            <Button
+                android:id="@+id/btRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_base_btn_yellow"
+                android:text="@string/register"
+                android:textColor="@color/main_text_color"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/cbAgreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:button="@drawable/base_checkbox_bg"
+                    android:checked="true" />
+
+                <TextView
+                    android:id="@+id/tvAgreement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="@string/register_tip"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

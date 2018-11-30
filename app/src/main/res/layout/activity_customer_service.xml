@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.miracle.base.view.ItemBar
+            android:id="@+id/ibQQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:ItemBar_Left_Icon="@string/icon_qq"
+            app:ItemBar_Left_TextColor="@color/qqBlue"
+            app:ItemBar_Left_TextSize="26sp"
+            app:ItemBar_Text="联系QQ客服" />
+
+        <com.miracle.base.view.ItemBar
+            android:id="@+id/ibWechat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:ItemBar_Left_Icon="@string/icon_wechat"
+            app:ItemBar_Left_TextColor="@color/weChatGreen"
+            app:ItemBar_Left_TextSize="26sp"
+            app:ItemBar_Text="复制并添加微信添加客服" />
+    </LinearLayout>
+</layout>

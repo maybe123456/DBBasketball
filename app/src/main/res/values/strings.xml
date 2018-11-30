@@ -1,0 +1,261 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--inconfont-->
+    <string name="icon_back">&#xe625;</string>
+    <string name="icon_tab_home">&#xe665;</string>
+    <string name="icon_tab_category">&#xe636;</string>
+    <string name="icon_tab_auction">&#xeef4;</string>
+    <string name="icon_tab_me">&#xe64e;</string>
+    <string name="icon_right_arrow">&#xe655;</string>
+    <string name="icon_order_manage">&#xe647;</string>
+    <string name="icon_bail_manage">&#xe69d;</string>
+    <string name="icon_me_info">&#xe613;</string>
+    <string name="icon_settings">&#xe619;</string>
+    <string name="icon_help">&#xe654;</string>
+    <!--关于我们-->
+    <string name="icon_about_us">&#xe6a1;</string>
+    <!--更新版本-->
+    <string name="icon_update_bb">&#xe616;</string>
+    <!--清除-->
+    <string name="icon_clean">&#xe650;</string>
+    <string name="icon_customer_service">&#xe64f;</string>
+    <string name="icon_contact_customer_service">&#xe60d;</string>
+    <string name="icon_qq">&#xe61c;</string>
+    <string name="icon_wechat">&#xe600;</string>
+    <string name="icon_chatroom">&#xe611;</string>
+    <string name="icon_clear_cache">&#xe660;</string>
+    <string name="icon_check_update">&#xe601;</string>
+    <string name="icon_share">&#xe65f;</string>
+    <string name="icon_auto_login">&#xe60f;</string>
+    <string name="icon_trend_map">&#xe6d2;</string>
+    <string name="icon_my_collections">&#xe62e;</string>
+    <string name="icon_side_menu">&#xe644;</string>
+    <string name="icon_fingerprint">&#xe648;</string>
+    <string name="icon_football_baby">&#xe602;</string>
+    <string name="icon_close">&#xe626;</string>
+    <!--点赞-->
+    <string name="icon_like">&#xe605;</string>
+    <!--评论-->
+    <string name="icon_comment">&#xe643;</string>
+    <!--奖杯-->
+    <string name="icon_cup">&#xe67c;</string>
+    <!--社区-->
+    <string name="icon_community">&#xe696;</string>
+    <!--加号，添加图片-->
+    <string name="icon_add">&#xe663;</string>
+    <!--删除X-->
+    <string name="icon_delete">&#xe626;</string>
+    <!--未选中-->
+    <string name="icon_select_off">&#xe63e;</string>
+    <!--选中-->
+    <string name="icon_select_on">&#xe63d;</string>
+    <!--发送-->
+    <string name="icon_send">&#xe621;</string>
+    <!--空心-->
+    <string name="icon_empty_heart">&#xe711;</string>
+    <!--实心-->
+    <string name="icon_full_heart">&#xe64c;</string>
+    <!--扫一扫-->
+    <string name="icon_scan">&#xe633;</string>
+    <!--手机-->
+    <string name="icon_phone">&#xe60b;</string>
+    <!--密码锁-->
+    <string name="icon_lock">&#xe699;</string>
+    <!--选中-->
+    <string name="icon_check">&#xe62b;</string>
+
+    <!-- fish -->
+    <string name="icon_home_line">&#xe71e;</string>
+    <string name="icon_papger_line">&#xe880;</string>
+    <string name="icon_book_line">&#xe65d;</string>
+    <string name="icon_chat_line">&#xe61d;</string>
+    <string name="icon_me_line">&#xe60c;</string>
+
+    <!--生活-->
+    <string name="icon_main_zixun">&#xe670;</string>
+    <string name="icon_main_faxian">&#xe623;</string>
+    <string name="icon_main_liaotianshi">&#xe659;</string>
+
+
+    <!--登录 注册-->
+    <string name="login_register">正在注册    |    登录</string>
+    <string name="login_regist">注册    |    登录</string>
+    <string name="import_phone_number">请输入您的手机号码</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_ok">确定</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="user_phone_number">请使用你的手机号码</string>
+    <string name="account_phone_hint">请输入手机号码</string>
+    <string name="next_password">下一步</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="pwd_hint_text">请输入新密码</string>
+    <string name="pwd_hint_text_two">请再次输入新密码</string>
+
+    <!--发送验证码倒计时-->
+    <string name="get_code">获取验证码</string>
+    <string name="get_resend_code">重发验证码</string>
+    <string name="get_cfm_code_disabled">%d秒后重发</string>
+    <!-- 再按一次退出 -->
+    <string name="exit_procedure">再按一次退出今日拍</string>
+
+    <!--material dialog-->
+    <string name="title">提示</string>
+    <string name="delcontent">确定删除吗？</string>
+    <string name="agree">确定</string>
+    <string name="know">知道了</string>
+    <string name="disagree">取消</string>
+    <string name="login_infortion">登录后才可以看到信息页面哦</string>
+    <string name="no_login">你还未登录哦</string>
+    <string name="phone_number">4008555603</string>
+
+    <!--MainActivity-->
+    <string name="tab_name_home">首页</string>
+    <string name="tab_name_categor">分类</string>
+    <string name="tab_name_auction">拍卖会</string>
+    <string name="tab_name_me">我的</string>
+
+    <!-- 网络连接-->
+    <string name="no_net">当前网络不可用,请检查网络设置</string>
+    <string name="loading_data_failed">数据加载失败,请重试！</string>
+    <string name="empty_data">哎呀，没有找到任何数据呢~</string>
+    <string name="load_no_data_message">哎呀，没有找到任何数据呢~</string>
+
+    <!--HomeFragment-->
+    <string name="home_title">今日拍</string>
+
+
+    <!--Category-->
+    <string name="category_title">分类</string>
+
+    <!--AuctionFragment-->
+    <string name="auction_title">拍卖会</string>
+
+
+    <string name="me_title">我的</string>
+    <string name="text_order_manage">赛事分析</string>
+    <string name="text_bill">账单</string>
+    <string name="text_bail_manage">保证金管理</string>
+    <string name="text_me_info">个人账户信息</string>
+    <string name="text_settings">设置</string>
+    <string name="text_help">帮助中心</string>
+    <string name="text_about_us">关于我们</string>
+    <string name="auction">拍卖会</string>
+    <string name="dialog_tilte">你还未绑定提现银行卡</string>
+    <string name="now_approve">马上认证</string>
+    <string name="autonym_name">持卡人</string>
+    <string name="card_number">银行卡号</string>
+    <string name="select_card">所属支行</string>
+    <string name="open_card">开户行</string>
+    <string name="borrower_people">借款人信息</string>
+    <string name="app_phone_old">原密码</string>
+    <string name="app_mima_new">新密码</string>
+    <string name="app_mima_new_s">重复密码</string>
+    <string name="search_hint_txt">输入关键字</string>
+
+    <!--订单管理-->
+
+    <string name="order_manage_title">订单管理</string>
+
+    <!--多级菜单-->
+    <string name="no_data">暂无数据</string>
+    <string name="all_product">全部拍品</string>
+    <string name="default_sort">默认排序</string>
+    <string name="product_details">产品详情</string>
+    <string name="btn_pirce">我要出价</string>
+    <string name="product_describe">主要事项</string>
+    <string name="announcements">保证金规则</string>
+    <string name="margin_rule">出价规则</string>
+    <string name="get_pricle">出价金额：</string>
+    <string name="ok">确定</string>
+    <string name="fill_invoice">请填写发票抬头</string>
+    <string name="select_pay_style">请选择支付方式</string>
+    <string name="go_pay">去支付</string>
+    <string name="sure_pay_money">应支付金额:  </string>
+    <string name="yuan">元</string>
+
+
+    <string name="select_addre">选择收货地址</string>
+    <string name="add_new_address">添加新地址</string>
+    <string name="take_info">暂无收货人信息</string>
+    <string name="take_addree_info">暂无收货人地址信息</string>
+    <string name="compile_addre">编辑地址</string>
+    <string name="call_people">联系人</string>
+    <string name="iphone_number">手机号</string>
+    <string name="details_address">详细地址</string>
+    <string name="province">直辖市</string>
+
+    <string name="check_logistics">查看物流</string>
+    <string name="confirm_take_over">确认收货</string>
+    <string name="mine_wu_adr">物流地址</string>
+    <string name="get_people_anme">收货人姓名</string>
+    <string name="get_people_num">收货人手机号码</string>
+    <string name="adr">所在地区</string>
+    <string name="details_adr">详情地址</string>
+    <string name="confirm">确认</string>
+    <string name="identify_number">请填写纳税人识别号</string>
+    <string name="placeholder_erroe">加载失败，点击重试</string>
+    <string name="placeholder_loading">努力加载中</string>
+    <string name="placeholder_empty">暂无相关数据</string>
+    <string name="san_succeed">扫描成功,请在pc端支付!</string>
+    <string name="san_ercode_fail">扫描二维码失败!</string>
+    <string name="product_descr">拍品描述</string>
+    <string name="price_ok">出价成功</string>
+    <string name="tv_ok">确定</string>
+    <string name="withdraw_ok">提现成功!</string>
+
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="complete">完成</string>
+    <string name="commit">提交</string>
+    <string name="copyLogisticsNumber">复制单号</string>
+    <string name="delete">删除</string>
+    <string name="shoujianren">收件人</string>
+    <string name="realname_name">姓名</string>
+    <string name="getVerifyCode">获取验证码</string>
+    <string name="reGetVerifyCode">%d秒后重新获取</string>
+    <string name="register_tip">点击“注册”按钮，即表示你同意《软件许可及服务协议》</string>
+    <string name="register">注册</string>
+    <string name="register_password">密码:</string>
+    <string name="register_confirm_password">确认密码:</string>
+    <string name="register_password_hint">8–16位非中文字符，首字符为英文</string>
+    <string name="register_password_hint2">密码由8–16位非中文字符组成，首字符为英文</string>
+    <string name="verifyCode">验证码:</string>
+    <string name="register_phoneNumber">手机号:</string>
+    <string name="register_username_hint">6–14位非中文字符，首字符为英文</string>
+    <string name="register_username_hint2">用户名由6–14位非中文字符组成，首字符为英文</string>
+    <string name="register_username">用户名:</string>
+    <string name="newUserRegister">新用户注册</string>
+    <string name="login_cellphone_retrieve">手机找回密码</string>
+    <string name="login_email_retrieve">邮箱找回密码</string>
+    <string name="login_userName_hint">用户名/手机号/邮箱</string>
+    <string name="login_password_hint">密码</string>
+    <string name="username_cannot_empty">用户名不能为空！</string>
+    <string name="phoneNumber_cannot_empty">手机号不能为空！</string>
+    <string name="email_cannot_empty">邮箱不能为空！</string>
+    <string name="password_cannot_empty">密码不能为空！</string>
+    <string name="verifyCode_cannot_empty">请输入验证码！</string>
+    <string name="phoneNumber_format_error">手机号码格式不正确！</string>
+    <string name="email_format_error">邮箱格式不正确！</string>
+    <string name="yes_its_me">是我的，立即登录</string>
+    <string name="change_another_phonenumber">换个手机号重新注册</string>
+    <string name="email_retrieve_s1">邮箱:</string>
+    <string name="email_retrieve_s2">验证邮件已发送至您的邮箱%s</string>
+    <string name="email_retrieve_s3">点击邮件中的链接可进行后续操作</string>
+    <string name="email_retrieve_s4">·验证邮件24小时内有效，请尽快验证。</string>
+    <string name="email_retrieve_s5">·邮件可能会进入推广邮件或垃圾邮件中，请注意查收。</string>
+    <string name="email_retrieve_button">点击返回登录页</string>
+    <string name="meinfo_head">头像</string>
+    <string name="meinfo_nickname">昵称</string>
+    <string name="meinfo_qrcode">二维码</string>
+    <string name="meinfo_sex">性别</string>
+    <string name="meinfo_signature">签名</string>
+    <string name="meinfo_title">个人信息</string>
+    <string name="unfilled">未填写</string>
+    <string name="exit">退出</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_success_tip">恭喜您，注册成功！</string>
+    <string name="register_success_login_immediately">直接登录</string>
+    <string name="already_registed_tip">手机号%s已被以上账号使用</string>
+    <string name="already_registed_tip2">请确认该账户是否为你本人所有</string>
+
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frag_hive_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_height="@dimen/title_bar_height">
+
+                <com.miracle.sport.schedule.view.TabLayout
+                    android:id="@+id/tablayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+
+                    style="@style/clube_post_head_tabbar"
+                    app:tabTextAppearance="@style/clube_post_head_bar_big_text"
+                    />
+
+                <View
+                    android:layout_gravity="center"
+                    android:layout_width="1dp"
+                    android:background="#fff"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_centerInParent="true"
+                    ></View>
+
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewpager1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

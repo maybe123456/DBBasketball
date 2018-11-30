@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/titleBarRoot"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/bottom_line">
+
+
+            <RelativeLayout
+                android:id="@+id/rlLeft"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_life"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_back" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/main_text_color"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="48dp">
+
+                <CheckBox
+                    android:id="@+id/cbRight"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/selector_like"
+                    android:button="@null"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/titleBarRoot"
+            android:layout_above="@+id/include_send_comment"
+            >
+
+            <com.miracle.sport.home.view.MyScrollview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:layout_below="@+id/webView"
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </RelativeLayout>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_good"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/defaule_img"
+                        android:layout_below="@+id/webView"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </com.miracle.sport.home.view.MyScrollview>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include
+            android:id="@+id/include_send_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/include_news_detail_tool_bar"/>
+            <!--layout="@layout/layout_editview"/>-->
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_line"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!--<com.miracle.michael.naoh.common.view.CircleImageView-->
+
+        <com.miracle.base.view.CircleImageView
+            android:id="@+id/iv"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:visibility="visible"
+            />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:text="名称"
+        android:textColor="@color/withdraw_name"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="2dp"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/im_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="1dp"
+            android:text="6"
+            android:gravity="center"
+            android:drawableLeft="@mipmap/message_open"
+            android:drawablePadding="5dp"
+            android:paddingRight="16dp"
+            />
+
+        <TextView
+            android:id="@+id/im_click_num"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/good"
+            android:text="600"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            android:paddingRight="16dp"
+            />
+        <TextView
+            android:id="@+id/im_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@mipmap/adapter_delete"
+            android:text="删除"
+            android:gravity="center"
+            android:drawablePadding="5dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="2dp"
+            android:layout_marginRight="6dp"
+            android:textColor="#333333"
+            />
+
+        <LinearLayout
+            android:id="@+id/digCommentBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="10dip"
+            android:paddingLeft="12dip"
+            android:paddingTop="12dip"
+            android:paddingRight="12dip"
+            android:paddingBottom="8dip"
+            android:background="@drawable/im_distribute_comm_bg"
+            android:layout_margin="10dp"
+
+            android:orientation="vertical" >
+
+
+            <View
+                android:id="@+id/lin_dig"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/im_line_color"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip"
+                />
+            <!--<com.yiw.circledemo.widgets.CommentListView-->
+            <com.miracle.sport.home.view.ChildListView
+                android:id="@+id/commentList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                app:item_color="@color/praise_item"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right"
+            android:text="2017/12/11" />
+    </LinearLayout>
+
+</LinearLayout>

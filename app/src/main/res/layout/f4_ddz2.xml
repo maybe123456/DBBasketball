@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wave="http://schemas.android.com/tools">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.scwang.wave.MultiWaveHeader
+                    android:id="@+id/waveHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:mwhVelocity="1"
+                    app:mwhProgress="1"
+                    app:mwhGradientAngle="45"
+                    app:mwhWaveHeight="60dp"
+                    app:mwhColorAlpha="0.45"
+                    app:mwhStartColor="@color/main_color"
+                    app:mwhCloseColor="@color/main_color_end"
+                    app:mwhWaves="MultiWave"/>
+
+                <LinearLayout
+                    android:id="@+id/login_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_10">
+
+                    <com.miracle.base.view.IconFontTextView
+                        android:id="@+id/ibSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="@string/icon_settings"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:gravity="center_vertical">
+
+                        <com.miracle.base.view.CircleImageView
+                            android:id="@+id/ivHeadImg"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerInParent="true"
+                            android:adjustViewBounds="false"
+                            android:src="@mipmap/default_head" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="请登录"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/tvPhone"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <com.miracle.base.view.IconFontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/icon_right_arrow"
+                            android:textColor="@color/white"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_below="@+id/login_msg"
+                    android:background="@color/transparent">
+                <!--android:background="@color/main_color">-->
+
+                    <TextView
+                        android:id="@+id/ibmyPost"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/jiemian001_07"
+                        android:drawablePadding="5dp"
+                        android:gravity="center"
+                        android:text="我的发帖0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/ibmyCircle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:drawableTop="@mipmap/jiemian001_03"
+                        android:drawablePadding="5dp"
+                        android:text="我的圈子0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/ibBailManage"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:drawableTop="@mipmap/jiemian001_05"
+                        android:drawablePadding="5dp"
+                        android:text="我的收藏0"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/my_msg"
+                    >
+
+
+
+
+
+                <com.miracle.base.view.ItemBar
+                    android:id="@+id/ibCustomerService"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="6dp"
+                    app:ItemBar_Left_Icon="@string/icon_customer_service"
+                    app:ItemBar_Left_TextColor="@color/zradiobutton_unchecked"
+                    app:ItemBar_Left_TextSize="24sp"
+                    app:ItemBar_Text="联系客服"
+                    app:ItemBar_TextSize="16sp" />
+
+                <com.miracle.base.view.ItemBar
+                    android:id="@+id/ibAboutUs"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    app:ItemBar_Left_Icon="@string/icon_about_us"
+                    app:ItemBar_Left_TextColor="@color/zradiobutton_unchecked"
+                    app:ItemBar_Left_TextSize="24sp"
+                    app:ItemBar_Text="关于我们"
+                    app:ItemBar_TextSize="16sp" />
+
+                <com.miracle.base.view.ItemBar
+                    android:id="@+id/ibShare"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    app:ItemBar_Left_Icon="@string/icon_share"
+                    app:ItemBar_Left_TextColor="@color/zradiobutton_unchecked"
+                    app:ItemBar_Left_TextSize="24sp"
+                    app:ItemBar_Text="分享"
+                    app:ItemBar_TextSize="16sp" />
+
+                <com.miracle.base.view.ItemBar
+                    android:id="@+id/appUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    app:ItemBar_Left_Icon="@string/icon_update_bb"
+                    app:ItemBar_Left_TextColor="@color/zradiobutton_unchecked"
+                    app:ItemBar_Left_TextSize="24sp"
+                    app:ItemBar_Text="更新版本"
+                    app:ItemBar_TextSize="16sp" />
+
+                <com.miracle.base.view.ItemBar
+                    android:id="@+id/ibClearCache"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="1dp"
+                    app:ItemBar_Left_Icon="@string/icon_clean"
+                    app:ItemBar_Left_TextColor="@color/zradiobutton_unchecked"
+                    app:ItemBar_Left_TextSize="24sp"
+                    app:ItemBar_Text="清除缓存"
+                    app:ItemBar_TextSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <com.miracle.base.view.zradiogroup.ZRadioButton
+                            android:id="@+id/ibOrderManage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            app:ZRadioButton_Icon="@string/icon_order_manage"
+                            app:ZRadioButton_IconTextSize="22sp"
+                            app:ZRadioButton_Text="赛事分析"
+                            app:ZRadioButton_TextSize="12sp"></com.miracle.base.view.zradiogroup.ZRadioButton>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <com.miracle.base.view.IconFontTextView
+                            android:id="@+id/ibGroupChat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:ZRadioButton_Icon="@string/icon_chatroom"
+                            app:ZRadioButton_IconTextSize="22sp"
+                            app:ZRadioButton_Text="聊天室"
+                            app:ZRadioButton_TextSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/jiemian001_17" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_settings"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/jiemian001_18" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_about_us"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</layout>

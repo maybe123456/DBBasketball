@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.miracle.base.view.IconFontTextView
+                android:id="@+id/tvContactCustomerService"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/icon_contact_customer_service"
+                android:textColor="@color/main_color_half"
+                android:textSize="50sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+        <com.miracle.base.view.zradiogroup.ZRadioGroup
+            android:id="@+id/zRadiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#493301">
+
+            <com.miracle.base.view.zradiogroup.ZRadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:ZRadioButton_Icon="@string/icon_tab_home"
+                app:ZRadioButton_Text="快讯" />
+
+            <com.miracle.base.view.zradiogroup.ZRadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                app:ZRadioButton_Icon="@string/icon_tab_category"
+                app:ZRadioButton_Text="分类" />
+
+            <com.miracle.base.view.zradiogroup.ZRadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-2dp"
+                android:layout_weight="1"
+                app:ZRadioButton_Icon="@string/icon_tab_auction"
+                app:ZRadioButton_Text="数据" />
+
+            <LinearLayout
+                android:id="@+id/rlGroupChat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.miracle.base.view.IconFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="@string/icon_chatroom"
+                    android:textColor="@drawable/selector_tab_text"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:gravity="center"
+                    android:text="聊天室"
+                    android:textColor="@drawable/selector_tab_text"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <com.miracle.base.view.zradiogroup.ZRadioButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:ZRadioButton_Icon="@string/icon_tab_me"
+                app:ZRadioButton_Text="我的" />
+
+
+        </com.miracle.base.view.zradiogroup.ZRadioGroup>
+    </LinearLayout>
+
+</layout>

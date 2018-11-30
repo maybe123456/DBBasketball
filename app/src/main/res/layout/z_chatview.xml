@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.miracle.base.view.zchatview.ZValueBar
+            android:id="@+id/zValueBar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.miracle.base.view.zchatview.ZTriangleView
+                android:layout_width="10dp"
+                android:layout_height="3dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

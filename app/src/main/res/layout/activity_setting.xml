@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/base_gradient"
+            android:paddingRight="20dp">
+
+            <com.miracle.base.view.ItemBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:ItemBar_Background="@color/transparent"
+                app:ItemBar_Left_Icon="@string/icon_auto_login"
+                app:ItemBar_RightVisibility="gone"
+                app:ItemBar_Text="自动登录" />
+
+            <Switch
+                android:id="@+id/swAutoLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textOff="关闭"
+                android:textOn="开启" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/base_gradient"
+            android:paddingRight="20dp">
+
+            <com.miracle.base.view.ItemBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                app:ItemBar_Background="@color/transparent"
+                app:ItemBar_Left_Icon="@string/icon_fingerprint"
+                app:ItemBar_RightVisibility="gone"
+                app:ItemBar_Text="指纹登录" />
+
+            <Switch
+                android:id="@+id/swFingerprintLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textOff="关闭"
+                android:textOn="开启" />
+        </LinearLayout>
+
+        <com.miracle.base.view.ItemBar
+            android:id="@+id/ibClearCache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:ItemBar_Left_Icon="@string/icon_clear_cache"
+            app:ItemBar_Text="清理缓存" />
+
+        <com.miracle.base.view.ItemBar
+            android:id="@+id/ibCheckUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            app:ItemBar_Left_Icon="@string/icon_check_update"
+            app:ItemBar_Text="检查版本" />
+
+
+        <Button
+            android:id="@+id/btExit"
+            android:layout_width="280dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/shape_base_btn"
+            android:text="@string/exit"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</layout>

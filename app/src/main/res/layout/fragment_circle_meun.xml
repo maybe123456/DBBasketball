@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circle="http://schemas.android.com/apk/res-auto"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:visibility="gone"
+        />
+    <com.miracle.base.view.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:TitleBar_Background="@color/main_color"
+        app:TitleBar_LeftVisibility="invisible"
+        app:TitleBar_TextColor="@color/white"
+        app:TitleBar_Title="首页" />
+
+    <LinearLayout
+        android:id="@+id/ll_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        android:layout_below="@+id/title_bar"
+        >
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:indicator_drawable_selected="@drawable/dot_selected"
+        app:indicator_drawable_unselected="@drawable/dot_normal"
+        app:indicator_height="5dp"
+        app:indicator_margin="4dp"
+        app:indicator_width="5dp" />
+
+    </LinearLayout>
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_banner"
+        app:mwhVelocity="1"
+        app:mwhProgress="1"
+        app:mwhGradientAngle="45"
+        app:mwhWaveHeight="300dp"
+        app:mwhColorAlpha="0.3"
+        app:mwhStartColor="@color/main_color_end"
+        app:mwhCloseColor="@color/main_color_end"
+        android:background="@drawable/em_splash"
+        app:mwhWaves="MultiWave"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_banner"
+        android:gravity="right" >
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="90dip"
+            android:layout_height="300dip"
+            android:layout_gravity="center"
+            android:background="@drawable/turnplate_bg_left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="110dip"
+                android:text="贴心的服务，带给您更安全、便捷的智能体验。" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="230dip"
+            android:layout_height="300dip"
+            android:layout_gravity="center"
+            android:background="@drawable/turnplate_bg_right"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="300dip"
+                android:layout_height="300dip" >
+
+                <com.miracle.sport.home.view.CircleLayout
+                    android:id="@+id/main_circle_layout"
+                    android:layout_width="300dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    circle:firstChildPosition="South"
+                    circle:isRotating="true"
+                    circle:rotateToCenter="false" >
+
+                    <!-- circle:circleBackground="@drawable/green"  > -->
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn1"
+                        circle:name="热门"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_1_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="热门"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn6"
+                        circle:name="网店推广"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img6"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_6_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="网店推广"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn5"
+                        circle:name="淘宝经验"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_5_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="淘宝经验"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn4"
+                        circle:name="网店运营"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_4_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="网店运营"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn3"
+                        circle:name="问答频道"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_3_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="问答频道"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+
+                    <com.miracle.sport.home.view.CircleImageView
+                        android:id="@+id/laybtn2"
+                        circle:name="淘宝资讯"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="50dip"
+                            android:layout_height="50dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/home_mbank_2_normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="淘宝资讯"
+                            android:textSize="14dip" />
+                    </com.miracle.sport.home.view.CircleImageView>
+                </com.miracle.sport.home.view.CircleLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:layout_width="104.0dip"
+                        android:layout_height="104.0dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_circle1" />
+
+                    <ImageView
+                        android:layout_width="116.0dip"
+                        android:layout_height="116.0dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/turnplate_mask_unlogin" />
+                </RelativeLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+</layout>

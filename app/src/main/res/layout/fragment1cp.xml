@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<com.dice.two.onetq.common.view.TitleBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:TitleBar_LeftVisibility="invisible"
+            app:TitleBar_Background="@color/title_color"
+            app:TitleBar_TextColor="@color/white"
+            app:TitleBar_Title="@string/main_title_1" />-->
+
+        <!--<com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:indicator_drawable_selected="@drawable/dot_selected"
+            app:indicator_drawable_unselected="@drawable/dot_normal"
+            app:indicator_height="5dp"
+            app:indicator_margin="4dp"
+            app:indicator_width="5dp" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/indexListView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/frag1cp_continer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <fragment
+                    android:id="@+id/categoryDetailFragment2"
+                    class="com.miracle.sport.onetwo.frag.LotteryListFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></fragment>
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

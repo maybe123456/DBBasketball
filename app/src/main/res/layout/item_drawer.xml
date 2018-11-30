@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/itemBarRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/base_gradient"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <com.miracle.base.view.IconFontTextView
+            android:id="@+id/tvIconLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textColor="@color/main_text_color"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</layout>

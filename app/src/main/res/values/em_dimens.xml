@@ -1,0 +1,42 @@
+<resources>
+
+     <dimen name="height_top_bar">46dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">65dp</dimen>
+    <dimen name="size_avatar">48dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+     <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+	<dimen name="chat_nick_margin_left">17dp</dimen>
+
+    <dimen name="call_small_width">24dp</dimen>
+    <dimen name="call_small_height">32dp</dimen>
+    <dimen name="call_local_width">96dp</dimen>
+    <dimen name="call_local_height">128dp</dimen>
+
+
+    <dimen name="trend_x_item_width">30dp</dimen>
+    <dimen name="trend_x_item_height">30dp</dimen>
+    <dimen name="trend_y_item_width">150px</dimen>
+    <dimen name="trend_y_item_height">30dp</dimen>
+    <dimen name="trend_y_text_size">12dp</dimen>
+    <dimen name="trend_content_text_size">14dp</dimen>
+    <dimen name="trend_corner_text_size">14dp</dimen>
+    <dimen name="trend_ball_radius">12dp</dimen>
+    <dimen name="trend_sulcus_bottom">9dp</dimen>
+    <dimen name="trend_time_height">26dp</dimen>
+
+
+    <dimen name="trend_x_item_name_width">44dp</dimen>
+    <dimen name="trend_x_text_size">14dp</dimen>
+    <dimen name="trend_sulcus_width">6dp</dimen>
+    <dimen name="trend_sulcus_height">6dp</dimen>
+</resources>

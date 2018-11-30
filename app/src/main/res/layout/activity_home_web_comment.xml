@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/include_send_comment"
+            >
+
+            <com.miracle.sport.home.view.MyScrollview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/titleBarRoot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/bottom_line"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/main_text_color"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textColor="@color/m666666"
+                            android:paddingLeft="6dp"
+                            android:textSize="14sp"
+                            android:gravity="left"
+                            android:paddingTop="6dp"
+                            />
+                    </LinearLayout>
+
+
+                    <WebView
+                        android:id="@+id/webView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleBarRoot"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/comment_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/webView"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:background="@color/white"
+
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/m666666"
+                            android:text="评论区"
+                            android:textSize="16sp"
+                            />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants"
+                        android:layout_below="@+id/comment_detail"
+                        >
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+                    </RelativeLayout>
+
+
+
+
+                    <ImageView
+                        android:id="@+id/iv_good"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/defaule_img"
+                        android:layout_below="@+id/webView"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </com.miracle.sport.home.view.MyScrollview>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include
+            android:id="@+id/include_send_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            layout="@layout/include_news_detail_tool_bar"/>
+            <!--layout="@layout/layout_editview"/>-->
+    </RelativeLayout>
+
+</layout>

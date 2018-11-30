@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<com.dice.two.onetq.common.view.TitleBar-->
+        <!--android:id="@+id/ftitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:TitleBar_Background="@color/title_color"-->
+        <!--app:TitleBar_LeftVisibility="invisible"-->
+        <!--app:TitleBar_TextColor="@color/white"-->
+        <!--android:visibility="v"-->
+        <!--app:TitleBar_Title="@string/main_title_1" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/chosed_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:text="选择:"
+                android:textAlignment="center" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:visibility="gone"
+                app:indicator_drawable_selected="@drawable/dot_selected"
+                app:indicator_drawable_unselected="@drawable/dot_normal"
+                app:indicator_height="5dp"
+                app:indicator_margin="4dp"
+                app:indicator_width="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<ListView
+                android:id="@+id/indexListView"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <fragment
+                android:id="@+id/categoryDetailFragment"
+                android:name="com.dice.two.onetq.lottery.fragment.FragCpItemList          android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <Button
+                    android:id="@+id/btn_add_channel"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="+"
+                    android:textColor="#fff"
+                    android:layout_alignParentRight="true"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tablayout1"
+                    android:layout_marginRight="40dp"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"
+                    app:tabTextColor="#999"
+                    app:tabIndicatorHeight="0px"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/frag_search_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ccc"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/search_et1"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/line_white_round_corners"
+                    android:hint="搜索"
+                    android:imeOptions="actionSearch"
+                    android:maxLength="50"
+                    android:paddingLeft="20dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/search_tv"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="9dp"
+                    android:background="@drawable/search_icon"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewpager1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</layout>

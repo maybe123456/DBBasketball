@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/red_rv"
+                    android:background="#fdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:background="#dde"
+                    android:id="@+id/blue_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:background="#dfd"
+                    android:id="@+id/record_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <FrameLayout
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.nightonke.boommenu.BoomMenuButton
+                android:id="@+id/bmb4"
+                app:bmb_showDuration="1400"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bmb_normalColor="@android:color/white"
+                app:bmb_highlightedColor="@android:color/darker_gray"
+                app:bmb_buttonEnum="textInsideCircle"
+                app:bmb_piecePlaceEnum="piecePlace_custom"
+                app:bmb_buttonPlaceEnum="buttonPlace_custom"
+                />
+
+            <TextView
+                android:text="随机选号"
+                android:textSize="12sp"
+                android:textColor="#222"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+</layout>

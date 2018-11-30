@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F00</color>
+    <color name="colorPrimaryDark">#3286E4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="base_activity_bg">#F2F2F2</color>
+
+    <color name="mystatus_bar_color">@color/colorPrimaryDark</color>
+
+    <color name="text_light_color">#fff</color>
+    <color name="text_light_dark_color">#999999</color>
+
+    <color name="collcet">#D0021B</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#FF00FF</color>
+    <color name="cyan">#00FFFF</color>
+    <color name="yellow">#FFFF00</color>
+
+
+    <color name="chatroom_color">#00ACFF</color>
+    <color name="dark_red">#A82020</color>
+    <color name="dark_red_pressed">#982020</color>
+    <color name="golden_color">#c5996c</color>
+    <color name="main_color_grey">#999999</color>
+    <color name="m999999">#999999</color>
+    <color name="m666666">#666666</color>
+    <color name="main_divider_color">#E3E3E3</color>
+    <!--<color name="main_text_color">@color/white</color>-->
+    <color name="main_text_color">#333333</color>
+    <color name="main_hint_color">#666666</color>
+
+    <color name="zradiobutton_checked">@color/main_color</color>
+    <color name="zradiobutton_unchecked">@color/main_color_grey</color>
+
+    <color name="text_nine_Color">#999999</color>
+    <color name="text_six_Color">#1c1c1c</color>
+    <color name="text_three_Color">#333333</color>
+
+    <color name="me_status_green">#5ED321</color>
+    <color name="me_status_grey">#929292</color>
+    <color name="me_status_red">#F54766</color>
+    <color name="me_status_blue">#4A90E2</color>
+    <color name="me_status_yellow">#F5A623</color>
+    <color name="me_realname_red">#B21629</color>
+    <color name="me_qrcode_blue">#EEF3FF</color>
+    <color name="me_share_color">#3E549C</color>
+    <color name="me_group_color">#D3FFFD</color>
+
+    <color name="me_light_cyan">#D3FFFD</color>
+    <color name="me_dark_cyan">#03CFBE</color>
+    <color name="me_light_green">#BEE791</color>
+    <color name="me_dark_green">#60A417</color>
+    <color name="me_yellow">#F5A623</color>
+
+    <color name="blue_pressed">#00D</color>
+    <color name="blue_time">#c31e897d</color>
+    <color name="blue_time_pressed">#24888A</color>
+
+    <color name="dark_yellow">#C5996C</color>
+    <color name="dark_yellow_pressed">#C5896C</color>
+    <color name="dialog_btn">#3475c6</color>
+    <color name="order_failed">#E60012</color>
+    <color name="comment_edittext_bg">#F5F5F5</color>
+    <color name="comment_delete">#D0021B</color>
+    <color name="dark_green">#24988B</color>
+    <color name="dark_green_pressed">#24888B</color>
+
+    <color name="colorTabBg">#ffffffff</color>
+    <color name="colorTabTextCheck">#40b1f6</color>
+    <color name="colorTabTextNormal">#585858</color>
+    <color name="colorTabLine">#40b1f6</color>
+    <color name="title_color">@color/main_color</color>
+    <color name="gray_color_button">#a6a4a4</color>
+    <color name="withdraw_blue">#4A90E2</color>
+    <color name="withdraw_name">#DC9C30</color>
+    <color name="withdraw_grey">#F9FAFB</color>
+    <color name="tv_green_color">#36c023</color>
+
+
+    <!--app背景色-->
+    <color name="background_gray">#f2f4f5</color>
+    <color name="ripp_pressed">#A0E5E5E5</color>
+
+    <!--线条的颜色-->
+    <color name="bg_line">#EBEBEB</color>
+
+    <!--二维码-->
+    <color name="scan_corner_color">#0effc2</color>
+
+    <!-- 圆形加载进度条颜色 -->
+    <color name="gplus_color_1">#427fed</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#e03e3f</color>
+
+    <!--界面圆形加载进度-->
+    <color name="cpb_default_color">#33b5e5</color>
+    <dimen name="cpb_default_stroke_width">4dp</dimen>
+    <integer name="cpb_default_min_sweep_angle">20</integer>
+    <integer name="cpb_default_max_sweep_angle">300</integer>
+    <item name="cpb_default_sweep_speed" format="float" type="string">1</item>
+    <item name="cpb_default_rotation_speed" format="float" type="string">1</item>
+
+    <color name="tabView">#d6c6c4c6</color>
+    <color name="logistic">#bfbfbf</color>
+    <color name="color_585858">#585858</color>
+    <color name="color_4A494A">#4A494A</color>
+    <color name="color_4A4A4A">#4A4A4A</color>
+    <color name="color_309D91">#309D91</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="qqBlue">#359FED</color>
+    <color name="weChatGreen">#4FC351</color>
+    <color name="blue_ball">#3e74d7</color>
+    <color name="red_ball">#d02e26</color>
+    <color name="blue_ball_dark">#00A</color>
+    <color name="red_ball_dark">#A00</color>
+
+    <color name="lottery_title_color">#ff222222</color>
+    <color name="trend_list_odd">#ffedecea</color>
+    <color name="trend_list_even">#ffe8e4de</color>
+    <color name="trend_line_odd_bg">#bff6f5f4</color>
+    <color name="trend_ball_red">#ffdc6161</color>
+    <color name="trend_ball_blue">#ff6daced</color>
+    <color name="trend_x_ball_blue">#ff6daced</color>
+    <color name="trend_x_ball_red">#ffdc6161</color>
+    <color name="trend_x_ball_stroke">#ffe8e8e8</color>
+    <color name="trend_x_blue_text">#ff177ffc</color>
+    <color name="trend_x_red_text">#fff03d3d</color>
+    <color name="trend_xtitle_bg">#ffdad2ca</color>
+    <color name="trend_max_count_color">#ff5d8adf</color>
+    <color name="trend_max_lianchu_bg">#fffef8e3</color>
+    <color name="trend_max_lianchu_color">#ff80756e</color>
+    <color name="trend_max_yilou_color">#ffd76969</color>
+    <color name="trend_avg_yilou_color">#ff6fb949</color>
+    <color name="trend_avg_yilou_bg">#ffe9f1dc</color>
+    <color name="trend_divider">#ffeaeaea</color>
+    <color name="trend_qihao_text">#fff8f5f2</color>
+    <color name="trend_content_yilou">#ff9e9e9e</color>
+
+    <color name="k_fall">#03CFBE</color>
+    <color name="k_rise">#F54766</color>
+
+    <color name="gold">#FFD700</color>
+    <color name="metal_grey">#9C9C9C</color>
+    <color name="metal_grey_end">#E8E8E8</color>
+
+    <!--首页-->
+
+    <color name="color_222222">#222222</color>
+    <color name="color_d43d3d">#d43d3d</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+
+    <!--========================-->
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="color_8290AF">#8290AF</color>
+
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="basic_color_primary">#373b3e</color>
+    <color name="im_line_color">#dadada</color>
+
+    <color name="register_yellow">#FFE746</color>
+</resources>

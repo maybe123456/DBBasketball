@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/base_rectangle_white_bg"
+    android:paddingBottom="30dp"
+    android:paddingLeft="55dp"
+    android:paddingRight="55dp"
+    android:paddingTop="5dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/register_success" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register_success"
+        android:textColor="@color/main_text_color"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btNext"
+        android:layout_width="168dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_blue_bg_selector"
+        android:text="@string/register_success_login_immediately"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</LinearLayout>

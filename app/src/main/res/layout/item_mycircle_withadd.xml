@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="5dp"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:id="@+id/rlItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivCircleLogo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:scaleType="fitXY"
+                android:src="@mipmap/defaule_img" />
+
+            <TextView
+                android:id="@+id/tvCircleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="勇士"
+                android:textColor="@color/main_hint_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rlAdd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.miracle.base.view.IconFontTextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/shape_et_border"
+                android:gravity="center"
+                android:text="@string/icon_add"
+                android:textColor="@color/main_color_grey"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="添加更多"
+                android:textColor="@color/main_hint_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

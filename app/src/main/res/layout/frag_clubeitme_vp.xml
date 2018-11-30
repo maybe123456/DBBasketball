@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frag_hive_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.miracle.sport.schedule.view.TabLayout
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tablayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#fff"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed"
+
+                    style="@style/clube_post_head_tabbar_white"
+                    app:tabTextAppearance="@style/clube_post_head_bar_big_text_white"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    />
+            </RelativeLayout>
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:id="@+id/viewpager1"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</layout>

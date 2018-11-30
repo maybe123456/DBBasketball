@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/frag_hive_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!--<master.flame.danmaku.ui.widget.DanmakuView
+            android:id="@+id/sv_danmaku"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+-->
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <!--<com.moxun.tagcloudlib.view.TagCloudView
+                android:id="@+id/TagCloudView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:autoScrollMode="uniform"
+                app:lightColor="#dcd"
+                app:darkColor="#666"
+                />
+            -->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"></android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+
+</layout>
