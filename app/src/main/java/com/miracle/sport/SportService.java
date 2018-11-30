@@ -37,14 +37,14 @@ public interface SportService {
      * @param pageSize 每页数量
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/tieList")
+    @POST("home/Basketball/tieList")
     Call<ZResponse<List<PostBean>>> getPostList(@Query("type") String type, @Query("class_id") Integer class_id, @Query("page") int page, @Query("pageSize") int pageSize);
 
     /**
      * 帖子详情
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/circleDetail")
+    @POST("home/Basketball/circleDetail")
     Call<ZResponse<PostDetailBean>> getPostDetail(@Query("id") int id);
 
 
@@ -53,20 +53,20 @@ public interface SportService {
      */
     @Headers({"BaseUrl:zh"})
     @Multipart
-    @POST("home/Taobao/sendTiezi")
+    @POST("home/Basketball/sendTiezi")
     Call<ZResponse> publishPost(@Query("class_id") int class_id, @Query("title") String title, @Query("content") String content, @Part() List<MultipartBody.Part> imgs);
 
     /**
      * 发帖
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/sendTiezi")
+    @POST("home/Basketball/sendTiezi")
     Call<ZResponse> publishPost(@Query("class_id") int class_id, @Query("title") String title, @Query("content") String content);
     /**
      * 帖子评论列表
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/tieziCommentList")
+    @POST("home/Basketball/tieziCommentList")
     Call<ZResponse<List<PostDetailBean.CommentBean>>> getPostCommentList(@Query("create_id") int id, @Query("page") int page, @Query("pageSize") int pageSize);
 
     /**
@@ -74,7 +74,7 @@ public interface SportService {
      * type 评论帖子 = 1 /评论评论 = 0
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/sendTieziComment")
+    @POST("home/Basketball/sendTieziComment")
     Call<ZResponse> sendPostComment(@Query("create_id") int create_id, @Query("to_user_id") int to_user_id, @Query("type") int type, @Query("content") String content);
 
 
@@ -84,14 +84,14 @@ public interface SportService {
      * @param type 1帖子，0评论
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/clickTiezi")
+    @POST("home/Basketball/clickTiezi")
     Call<ZResponse> likePost(@Query("create_id") int create_id, @Query("click") int click, @Query("type") int type);
 
     /**
      * 评论列表list
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/commentList")
+    @POST("home/Basketball/commentList")
     Call<ZResponse<List<ArticleCommentBean>>> getCommetList(@Query("id") int id, @Query("page") int page, @Query("pageSize") int pageSize);
 
 //    /**
@@ -105,7 +105,7 @@ public interface SportService {
      * 发评论
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/sendComment")
+    @POST("home/Basketball/sendComment")
     Call<ZResponse<ArticleCommentBean>> sendCommentCommet(@Query("create_id") int id, @Query("content") String content, @Query("to_user_id") String to_user_id, @Query("type") String type);
 
 
@@ -121,28 +121,28 @@ public interface SportService {
      * 我的发帖
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/myPost")
+    @POST("home/Basketball/myPost")
     Call<ZResponse<List<PostBean>>> getMyPostList(@Query("page") int page, @Query("pageSize") int pageSize);
 
     /**
      * 我的回帖
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/myReply")
+    @POST("home/Basketball/myReply")
     Call<ZResponse<List<HomeCommentBean>>> getReplyList();
 
     /**
      * 我的圈子
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/myCircle")
+    @POST("home/Basketball/myCircle")
     Call<ZResponse<List<MyCircleBean>>> getMyCircleList();
 
     /**
      * 圈子列表
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/circleType")
+    @POST("home/Basketball/circleType")
     Call<ZResponse<List<CircleBean>>> getCircleList();
 
     /**
@@ -150,7 +150,7 @@ public interface SportService {
      * type传"qx"取消收藏圈子
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/addSq")
+    @POST("home/Basketball/addSq")
     Call<ZResponse> addCircle(@Query("class_id") int class_id, @Query("type") int type);
 
 //    /**
@@ -164,14 +164,14 @@ public interface SportService {
      * 首页title 类型
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/type")
+    @POST("home/Basketball/type")
     Call<ZResponse<List<ChannerlKey>>> getSearchKeys();
 
     /**
      * 首页列表
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/flashList")
+    @POST("home/Basketball/flashList")
     Call<ZResponse<List<Football>>> getNewsList(@Query("class_id") int class_id, @Query("page") int page, @Query("pageSize") int pageSize);
     //    Call<ZResponse<List<Football>>> getNewsList(@Query("class_id") int class_id, @Query("page") int page, @Query("pageSize") int pageSize);
 
@@ -179,7 +179,7 @@ public interface SportService {
      * 首页列表
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/fishlist")
+    @POST("home/Basketball/fishlist")
     Call<ZResponse<List<Football>>> getNewsSpotrList(@Query("class_id") int class_id, @Query("page") int page, @Query("pageSize") int pageSize);
     //    Call<ZResponse<List<Football>>> getNewsList(@Query("class_id") int class_id, @Query("page") int page, @Query("pageSize") int pageSize);
 
@@ -202,7 +202,7 @@ public interface SportService {
      * 列表详情
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/fishDetail")
+    @POST("home/Basketball/fishDetail")
     Call<ZResponse<ArticleDetailBean>> getCommentDetailSport(@Query("id") int id);
 
     /**
@@ -218,7 +218,7 @@ public interface SportService {
      * @POST("home/sport/click")
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/click")
+    @POST("home/Basketball/click")
     Call<ZResponse<String>> setClickClass(@Query("create_id") int create_id, @Query("click") int click, @Query("type") String type);
 
 
@@ -227,21 +227,21 @@ public interface SportService {
      * @POST("home/sport/click")
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/deleteComment")
+    @POST("home/Basketball/deleteComment")
     Call<ZResponse<String>> setClickDelete(@Query("id") int id, @Query("create_id") int create_id, @Query("type") String type);
 
     /**
      * 收藏接口
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/collect")
+    @POST("home/Basketball/collect")
     Call<ZResponse<String>> likeOrDislike(@Query("create_id") int create_id, @Query("type") String type);
 
     /**
      * 我的收藏接口
      */
     @Headers({"BaseUrl:zh"})
-    @POST("home/Taobao/myCollect")
+    @POST("home/Basketball/myCollect")
     Call<ZResponse<List<Football>>> getMycollections(@Query("page") int page, @Query("pageSize") int pageSize);
 
     /**
