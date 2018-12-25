@@ -8,8 +8,8 @@ android {
     dataBinding.enabled = true
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
-        applicationId "com.testtest.developx"
-        resValue "string", "app_name", "篮球资讯"
+        applicationId "com.ddd.testtimejob"
+        resValue "string", "app_name", "电玩城市"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 7
@@ -104,6 +104,9 @@ dependencies {
     //重水波纹
     implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-alpha-1'
     implementation 'com.gelitenight.waveview:waveview:1.0.0'
+
+
+
 }
 // ADD THIS AT THE BOTTOM
 apply plugin: 'com.google.gms.google-services'
